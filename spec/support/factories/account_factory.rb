@@ -4,7 +4,7 @@ FactoryGirl.define do
     sequence(:subdomain) { |n| "test#{n}" }
     association :owner, factory: :user
     after(:create) do |account|
-      account.user << account.owner
+      account.users << account.owner
     end
   end
 end

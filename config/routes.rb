@@ -6,6 +6,8 @@ Subscribem::Engine.routes.draw do
       root to: 'dashboard#index', as: :account_root
       get '/sign_in' => 'sessions#new'
       post '/sign_in' => 'sessions#create', as: :sessions
+      get '/sign_up' => 'users#new', as: :user_sign_up
+      post '/sign_up' => 'users#create', as: :do_user_sign_up
     end
   end
   root "dashboard#index"
