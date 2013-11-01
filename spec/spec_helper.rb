@@ -45,4 +45,7 @@ RSpec.configure do |config|
   config.after(:each) do
     Apartment::Database.reset
   end
+
 end
+
+Capybara.app_host = 'http://example.com'
