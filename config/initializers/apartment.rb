@@ -1,0 +1,1 @@
+Apartment.exclude_models = ["Subscribem::Account", "Subscribem::Member", "Subscribem::User"]
